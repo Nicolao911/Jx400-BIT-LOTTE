@@ -1,0 +1,22 @@
+package cls;
+
+import java.util.Observable;
+
+public class MyClass extends Observable{
+	
+	private String perArg = null;
+	
+	// 일반 메소드
+	
+	@Override
+	public void notifyObservers(Object arg) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		super.notifyObservers(arg);
+	}
+	
+
+
+}

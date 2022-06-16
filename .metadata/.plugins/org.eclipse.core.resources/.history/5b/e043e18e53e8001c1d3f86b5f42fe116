@@ -1,0 +1,14 @@
+package cls;
+
+public class MyClass {
+		
+	private int number;
+
+	
+	public MyClass(int number) {
+		this.number = number;
+	}
+	
+	
+	
+}

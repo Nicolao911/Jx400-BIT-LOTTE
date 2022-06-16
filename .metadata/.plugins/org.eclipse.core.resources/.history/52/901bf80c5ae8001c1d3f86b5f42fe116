@@ -1,0 +1,10 @@
+package factory;
+
+import animal.Animal;
+
+public class AnimalFactory {
+	
+	public static Animal name() {
+		
+	}
+}

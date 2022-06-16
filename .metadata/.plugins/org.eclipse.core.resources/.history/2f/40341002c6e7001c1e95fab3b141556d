@@ -1,0 +1,7 @@
+package main;
+
+public class AddressBookDTO {
+	String fileName;
+	String human[][];
+	int humanCount = 0; 
+}

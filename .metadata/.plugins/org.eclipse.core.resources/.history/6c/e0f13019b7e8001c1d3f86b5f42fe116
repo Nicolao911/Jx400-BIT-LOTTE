@@ -1,0 +1,14 @@
+package dao;
+/*
+ * 선수 명단 dao class
+ */
+public interface BaseballDao {
+	//추가
+	public void insert();
+	//삭제
+	public void delete();
+	//검색(동명이인) -> 이름 검색
+	public void select();
+	//수정
+	public void update();
+}

@@ -1,0 +1,14 @@
+package single;
+
+public class SingletonClass {
+	
+	private static SingletonClass sc = null;
+	
+	private SingletonClass() {//생성자로 생성 못하게 막아둠.private
+	}
+
+	public SingletonClass getInstance() {
+
+	}
+
+}

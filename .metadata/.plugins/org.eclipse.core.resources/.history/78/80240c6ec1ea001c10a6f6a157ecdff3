@@ -1,0 +1,19 @@
+package main;
+
+public class ThreadEx extends Thread {
+	
+	String msg;
+
+	public ThreadEx(String msg) {
+		this.msg = msg;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+	}
+	
+	
+	
+}

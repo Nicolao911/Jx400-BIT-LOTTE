@@ -1,0 +1,11 @@
+package main;
+
+public class MainClass {
+	public static void main(String[] args) {
+		/*
+		 * Factory : object 공장
+		 * 			원하는 object를 생성하기 위한 pattern
+		 * 			
+		 */
+	}
+}

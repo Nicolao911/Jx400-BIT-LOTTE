@@ -73,6 +73,7 @@ public class MainClass {
 		int num1[] = number1;
 		int num2[] = number2;
 		
+
 		int temp[];
 		temp = num1;
 		num1 = num2;

@@ -1,0 +1,7 @@
+package dto;
+/*
+ * 타자 개인정보 java beans
+ */
+public class BatterDto extends HumanDto {
+
+}

@@ -1,0 +1,16 @@
+package main;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 *  final : 예약어. const(상수)화 시켜준다. c에서는 difine
+		 *  	   변수, 메소드, 클래스 에 적용할 수 있다.
+		 * 
+		 */
+		int number = 10;
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package main;
+
+public class ThreadEx extends Thread {
+	
+	public ThreadEx() {
+		
+		
+	}
+}

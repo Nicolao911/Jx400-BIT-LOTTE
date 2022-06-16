@@ -1,0 +1,11 @@
+package wnd;
+
+import java.awt.Frame;
+
+public class WindowTest extends Frame {
+	public WindowTest() {
+	}
+	
+	
+	
+}

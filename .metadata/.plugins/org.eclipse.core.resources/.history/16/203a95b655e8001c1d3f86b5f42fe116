@@ -1,0 +1,15 @@
+package cls;
+
+import single.SingletonClass;
+
+public class HeClass {
+	
+	private int number;
+	
+	public void proc() {
+		SingletonClass sc = SingletonClass.getInstance();
+		
+		
+	}
+	
+}

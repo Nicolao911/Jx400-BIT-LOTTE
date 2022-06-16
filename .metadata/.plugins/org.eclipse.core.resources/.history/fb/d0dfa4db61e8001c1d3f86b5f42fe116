@@ -1,0 +1,10 @@
+package cls;
+
+import java.util.Observable;
+
+public class MyClass extends Observable{
+	
+	private String perArg = null;''
+
+
+}

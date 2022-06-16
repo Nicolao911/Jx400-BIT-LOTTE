@@ -1,0 +1,8 @@
+package cls;
+
+import inter.PrintNameInterface;
+
+public class PrintPhoneCard implements PrintNameInterface {
+
+
+}

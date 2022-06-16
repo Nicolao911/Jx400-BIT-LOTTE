@@ -1,0 +1,18 @@
+package team;
+/*
+ * 투수 개인 정보 java beans
+ */
+public class Pitcher extends Human {
+	private String win; // 승
+	private String lose; // 패
+	private Double ERA;//Earned Run Average
+//	public Pitcher() {
+//	}
+//	public Pitcher(String win, String lose, Double eRA) {
+//		this.win = win;
+//		this.lose = lose;
+//		ERA = eRA;
+//	}
+//	
+	
+}

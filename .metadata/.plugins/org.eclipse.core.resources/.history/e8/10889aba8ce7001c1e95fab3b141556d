@@ -1,0 +1,20 @@
+package main;
+/*
+ * 상속
+ */
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * 은닉성(캡슐화), 상속성
+		 * 
+		 * 
+		 * 			
+		 */
+		
+		
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package cls;
+
+public class ChildClass extends ParentClass {
+	
+	
+	public void method() {
+		
+	}
+}

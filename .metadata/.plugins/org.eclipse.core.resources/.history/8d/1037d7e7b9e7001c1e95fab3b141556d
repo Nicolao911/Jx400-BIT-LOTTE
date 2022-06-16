@@ -1,0 +1,8 @@
+package main;
+
+public class MyData {
+	private int number;
+	private String name;
+	
+	
+}

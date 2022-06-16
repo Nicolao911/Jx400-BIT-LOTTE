@@ -1,0 +1,21 @@
+package main;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * 절차 지향 : 변수 선언, 함수 선언 -> 연산
+  		 *			순서 지향 1 2 3 4 
+		 * 			유지보수에선 좋지 않음, 재사용성 좋지 않음
+		 * 
+		 * 객체지향 : Class(object 설계도)
+		 * 
+		 * 
+		 */
+		
+		
+		
+	}
+
+}

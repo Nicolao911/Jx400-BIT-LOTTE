@@ -1,0 +1,17 @@
+package main;
+
+public class YouClass implements myInterface, youInterface {
+
+	@Override
+	public void func(String str) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void method(int n) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

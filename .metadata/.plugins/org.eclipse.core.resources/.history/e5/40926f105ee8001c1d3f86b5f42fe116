@@ -1,0 +1,13 @@
+package person;
+
+import bomb.Bomb;
+import weapon.Weapon;
+
+public class Person {
+	
+	public Weapon m_weapon;
+	public Bomb m_bomb;
+	
+	
+	
+}

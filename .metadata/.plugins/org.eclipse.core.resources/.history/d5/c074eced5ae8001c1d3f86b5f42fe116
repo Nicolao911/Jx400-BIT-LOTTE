@@ -1,0 +1,21 @@
+package main;
+
+import animal.Animal;
+import factory.AnimalFactory;
+
+public class MainClass {
+	public static void main(String[] args) {
+		/*
+		 * Factory : object 공장
+		 * 			원하는 object를 생성하기 위한 pattern
+		 * animal - interface
+		 * cat, dog, cow - class 
+		 * 
+		 *  factory
+		 */
+		
+		Animal ani = new AnimalFactory().create("고양이");
+		Animal ani1 = new AnimalFactory().create("강아지");
+		Animal ani2 = new AnimalFactory().create("황소");
+	}
+}

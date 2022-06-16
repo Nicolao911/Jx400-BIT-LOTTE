@@ -1,0 +1,10 @@
+package cls;
+
+public class NameCard {
+	String name;
+	String phone;
+	String email;
+	
+	
+
+}

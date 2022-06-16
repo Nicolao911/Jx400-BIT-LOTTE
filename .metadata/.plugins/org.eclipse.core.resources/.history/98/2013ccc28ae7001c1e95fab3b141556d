@@ -1,0 +1,43 @@
+package cls;
+/*
+ * java beans
+ */
+public class MyClass {
+	
+	private int number;
+	private String name;
+	private Double height;
+	
+	public MyClass() { // 기본 생성자
+		// TODO Auto-generated constructor stub
+		System.out.println("Myclass myClass()");
+		number = 1;
+		name = "";
+		height = 0.0;
+	}
+	
+	public MyClass(int number , String name) {
+		System.out.println("Myclass myClass()");
+		this.number = number;
+		this.name = name;
+	}
+
+	public MyClass(int number, String name, Double height) {
+		this.number = number;
+		this.name = name;
+		this.height = height;
+	}
+	
+	/*
+	 * this : 자기 참조
+	 * 		  각 함수별로 0번째 매개변수다
+	 */
+
+	@Override
+	public String toString() {
+		return "MyClass [number=" + number + ", name=" + name + ", height=" + height + "]";
+	}
+	
+	
+	
+}

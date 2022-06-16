@@ -1,0 +1,13 @@
+package dao;
+/*
+ * 선수 명단 dao class
+ */
+public interface BaseballDao {
+	//추가
+	
+	//삭제
+	
+	//검색(동명이인)
+	
+	//수정
+}

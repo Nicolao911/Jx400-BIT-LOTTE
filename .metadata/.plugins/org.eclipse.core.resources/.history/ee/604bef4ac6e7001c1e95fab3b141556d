@@ -1,0 +1,11 @@
+package main;
+
+public class AddressBookDTO {
+	String fileName;// 확인해야될듯
+	
+	String name;
+	int age;
+	String phone;
+	String address;
+	String memo;
+}

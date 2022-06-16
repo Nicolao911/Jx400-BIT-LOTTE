@@ -1,0 +1,8 @@
+package wnd;
+
+import java.awt.Frame;
+import java.awt.event.WindowListener;
+
+public class WindowTest extends Frame implements WindowListener {
+
+}

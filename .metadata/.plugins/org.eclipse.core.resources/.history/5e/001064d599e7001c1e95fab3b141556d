@@ -1,0 +1,6 @@
+package cls;
+
+public class MyClass {
+	// 변수의 종류
+	private int number; // member 변수
+}

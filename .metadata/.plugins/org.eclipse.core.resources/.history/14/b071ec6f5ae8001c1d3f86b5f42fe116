@@ -1,0 +1,22 @@
+package factory;
+
+import animal.Animal;
+
+public class AnimalFactory {
+	
+	public static Animal create(String animalName) {
+		
+		//null체크
+		if (animalName.equals("")) {
+			System.out.println("생성할 클레스가 없습니다");
+		} else if (animalName.equals("고양이")) {
+			return 
+		} else if (animalName.equals("강아지")) {
+			
+		} else if (animalName.equals("황소")) {
+			
+		}
+		
+		return null;
+	}
+}

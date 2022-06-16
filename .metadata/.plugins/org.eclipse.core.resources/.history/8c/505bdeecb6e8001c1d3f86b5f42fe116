@@ -1,0 +1,7 @@
+package dao;
+/*
+ * 선수 명단 dao class
+ */
+public interface BaseballDao {
+	
+}

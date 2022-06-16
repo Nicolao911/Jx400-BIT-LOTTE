@@ -1,0 +1,57 @@
+package team;
+/*
+ * 투수 개인 정보 java beans
+ */
+public class Pitcher extends Human {
+	private String win; // 승
+	private String lose; // 패
+	private Double ERA;//Earned Run Average
+
+	public Pitcher() {
+	}
+
+	public Pitcher(String win, String lose, Double eRA) {
+		this.win = win;
+		this.lose = lose;
+		ERA = eRA;
+	}
+	
+	/*
+	 * 승리 횟수를 돌려준다.
+	 */
+	public String getWin() {
+		return win;
+	}
+
+	/*
+	 * 패배 횟수를 돌려준다.
+	 */
+	public String getLose() {
+		return lose;
+	}
+	/*
+	 * 방어율을 돌려준다.
+	 */
+	public Double getERA() {
+		return ERA;
+	}
+
+	public void setWin(String win) {
+		this.win = win;
+	}
+
+	public void setLose(String lose) {
+		this.lose = lose;
+	}
+
+	public void setERA(Double eRA) {
+		ERA = eRA;
+	}
+
+	@Override
+	public String toString() {
+		return "Pitcher [win=" + win + ", lose=" + lose + ", ERA=" + ERA + "]";
+	}
+	
+	
+}

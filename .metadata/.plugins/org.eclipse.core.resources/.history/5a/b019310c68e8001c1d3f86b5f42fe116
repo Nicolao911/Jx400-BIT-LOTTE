@@ -1,0 +1,7 @@
+package team;
+/*
+ * 타자 개인정보 java beans
+ */
+public class Batter extends Human {
+
+}

@@ -1,0 +1,14 @@
+package cls;
+
+import inter.PrintNameInterface;
+
+public class PrintEamilCard implements PrintNameInterface {
+
+
+	@Override
+	public void print(NameCard n) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

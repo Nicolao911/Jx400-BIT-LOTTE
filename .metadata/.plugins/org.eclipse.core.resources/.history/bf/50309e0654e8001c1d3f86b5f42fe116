@@ -1,0 +1,19 @@
+package main;
+
+import cls.MyClass;
+import cls.YouClass;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyClass myCls = new MyClass(123);
+		
+		YouClass youCls = new  YouClass();
+		
+		int n = myCls.getNumber();
+		youCls.setTag(n);
+		System.out.println(youCls);
+	}
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=OverRide/src&lt;cls{ParentClass.java[ParentClass" modifiers="1" timestamp="1654737770476"/>
+    <typeInfo handle="=InterfaceClass/src&lt;main{myInterface.java[myInterface" modifiers="513" timestamp="1654744384151"/>
+    <typeInfo handle="=NameCardInter/src&lt;inter{PrintNameInterface.java[PrintNameInterface" modifiers="513" timestamp="1654746276816"/>
+    <typeInfo handle="=Factory/src&lt;animal{Animal.java[Animal" modifiers="513" timestamp="1654823213260"/>
+    <typeInfo handle="=Factory2/src&lt;weapon{Weapon.java[Weapon" modifiers="513" timestamp="1654824560669"/>
+    <typeInfo handle="=Factory2/src&lt;bomb{Bomb.java[Bomb" modifiers="513" timestamp="1654824692959"/>
+    <typeInfo handle="=Factory2/src&lt;types{AbstractItem.java[AbstractItem" modifiers="513" timestamp="1654824867632"/>
+    <typeInfo handle="=BaseballTeam_retry/src&lt;dao{BaseballDao.java[BaseballDao" modifiers="513" timestamp="1654935727089"/>
+    <typeInfo handle="=AWTsample03/C:\/eclipse\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\/jre\/lib\/jrt-fs.jar`java.desktop=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/15\/docs\/api\/=/&lt;java.awt(Frame.class[Frame" modifiers="33" timestamp="1603742986000"/>
+    <typeInfo handle="=AWTsample03/C:\/eclipse\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\/jre\/lib\/jrt-fs.jar`java.desktop=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/15\/docs\/api\/=/&lt;java.awt.event(WindowListener.class[WindowListener" modifiers="1537" timestamp="1603742986000"/>
+</typeInfoHistroy>

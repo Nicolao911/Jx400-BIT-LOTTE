@@ -1,0 +1,15 @@
+package cls;
+/*
+ * java beans
+ */
+public class MyClass {
+	
+	private int number;
+	private String name;
+	private int height;
+	
+	public MyClass() {
+		// TODO Auto-generated constructor stub
+		System.out.println()"Myclass myClass()";
+	}
+}

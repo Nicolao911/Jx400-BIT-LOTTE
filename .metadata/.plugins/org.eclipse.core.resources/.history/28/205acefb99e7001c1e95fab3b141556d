@@ -1,0 +1,10 @@
+package cls;
+
+public class MyClass {
+	// 변수의 종류
+	private int number; // 맴버 변수
+	
+	public void method(int num) { // 매개 변수
+		int localNum; // 지역변수
+	}
+}

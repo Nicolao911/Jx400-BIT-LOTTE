@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Scanner;
 //배열 걷어내고 list로 바꾸기 dto도 다 만들고
 public class AddressBook {
-	String fileName;
 	String human[][];
 	int humanCount = 0; 
 	Scanner sc = new Scanner(System.in);
@@ -46,16 +45,15 @@ public class AddressBook {
 	
 			switch (number) {
 				case 1: {
-//					insert(human, humanCount);
 					insert();
 					break;
 				}
 				case 2: {
-					delete(human);
+					delete();
 					break;
 				}
 				case 3: {
-					select(human);
+					select();
 					break;
 				}
 				case 4: {
@@ -63,7 +61,6 @@ public class AddressBook {
 					break;
 				}
 				case 5: {
-//					print(human);
 					print();
 					break;
 				}
@@ -91,9 +88,9 @@ public class AddressBook {
 		System.out.println("주소 = ");
 		String address = sc.next();
 		
-		System.out.println("메모44 = ");
+		System.out.println("메모 = ");
 		String memo = sc.next();
-		objList.add(new AddressBookDTO(name, name, age, phone, address, memo));
+		objList.add(new AddressBookDTO("addressBook", name, age, phone, address, memo));
 	}
 	
 	public void print() {
@@ -103,21 +100,23 @@ public class AddressBook {
 	}
 	
 	
-	public void delete(String[][] human) {
+	public void delete() {
 		System.out.println("삭제하고 싶은 이름 = ");
 		String name = sc.next();
-		// 검색 순회 돌려서 같은 이름에서 objList.remove()
 		
 		int index = search(name);
 		if (index == -1) {
 			System.out.println("회원 정보를 찾을 수 없습니다.");
-			return; //없으면 튀어나감
+			return; //종료
 		} 
 		
 		objList.remove(index);
 		System.out.println("정보를 삭제 하였습니다.");
 	}
 	
+	/*
+	 * 삭제를 위한 검색
+	 */
 	public int search(String name) {
 		int index = -1; // -1이 나오면 못찾았단뜻
 
@@ -125,36 +124,41 @@ public class AddressBook {
 			AddressBookDTO obj = objList.get(i);
 			if (name.equals(obj.getName())) {
 				index = i;
-//				break; --> 동명이인이면 break 안걸고 다돌려야하는지?
 			}
 		}
 		return index;
 	}
 
-	public void select(String[][] human) {
+	/*
+	 * 검색
+	 */
+	public void select() {
 		System.out.println("검색하고 싶은 이름 = ");
 		String name = sc.next();
-		//여기 새로운list
+		
+		//검색 결과
 		List<AddressBookDTO> resultList = new ArrayList<AddressBookDTO>();
 		
-		String findMember[][] = searchAll(human, name);
+		resultList = searchAll(resultList, name);
 		
-		if (findMember == null) {
+		if (resultList.size() == 0) {
 			System.out.println("정보를 찾을 수 없습니다.");
 			return;
 		}
 		
-		for (int i = 0; i < findMember.length; i++) {
-			System.out.println(Arrays.toString(findMember[i]));
+		for (AddressBookDTO addressBookDTO : resultList) {
+			System.out.println(resultList);
 		}
 	}
 	
-	private String[][] searchAll(String[][] human, String name) {
+	private List<AddressBookDTO> searchAll(List<AddressBookDTO> resultList, String name) {
 		//찾았을때 데이터 담기
 		int count = 0;
 		// 카운트
-		for (int i = 0; i < human.length; i++) {
-			if (human[i][0] != null && human[i][0].equals(name)) {
+		for (int i = 0; i < objList.size(); i++) {
+			AddressBookDTO obj = objList.get(i);
+			if (name.equals(obj.getName())) {
+				resultList.add(obj);
 				count++;
 			}
 		}
@@ -163,19 +167,7 @@ public class AddressBook {
 		if (count == 0) {
 			return null;
 		}
-		// 할당
-		String findMember[][] = new String[count][5];
-		int cou = 0;
-		
-		// 데이터 저장	
-		for (int i = 0; i < human.length; i++) {
-			if (human[i][0] != null && human[i][0].equals(name)) {
-				findMember[cou] = human[i];
-				cou++;
-			}
-		}
-		
-		return findMember;
+		return resultList;
 	}
 
 	public void save(String[][] human, String fileName) {

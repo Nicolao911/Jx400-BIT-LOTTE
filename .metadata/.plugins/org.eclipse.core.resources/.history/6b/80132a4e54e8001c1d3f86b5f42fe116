@@ -1,0 +1,6 @@
+package single;
+
+public class SingletonClass {
+	
+	private static SingletonClass sc = null;
+}

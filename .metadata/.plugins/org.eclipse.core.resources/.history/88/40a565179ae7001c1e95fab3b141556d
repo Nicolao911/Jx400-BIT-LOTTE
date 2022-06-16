@@ -1,0 +1,13 @@
+package cls;
+
+public class MyClass {
+	// 변수의 종류
+	private int number; // 맴버 변수
+	
+	static int glNumber; //static 변수, 전역변수(global)
+	
+	public void method(int num) { // 매개 변수
+		
+		int localNum; // 지역변수
+	}
+}

@@ -1,0 +1,15 @@
+package main;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyClass cls = new  MyClass();
+		cls.method(); // 인스턴스 메소드
+//		cls.staticMethod();// static method
+		
+//		MyClass.staticMethod(); // 요렇게 클래스명으로 바로 호출가능 이렇게한다. 어디서나 다 호출되게 만들수있다.
+		MyClass.getObject();
+	}
+
+}

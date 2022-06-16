@@ -1,0 +1,19 @@
+package main;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * Generic : 자료형의 변수
+		 * 			같은 클래스에서 다양한 자료형(클래스 자료형 : String , Integer)을 사용하고 싶을때
+		 * 			정의하는 요소
+		 * 
+		 */
+	}
+
+class box<T>{
+	
+}
+}
+

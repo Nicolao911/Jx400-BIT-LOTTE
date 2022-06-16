@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;threadEx&apos; to &apos;TCPServer/src&apos;&#x0D;&#x0A;- Original project: &apos;ThreadEx&apos;&#x0D;&#x0A;- Destination element: &apos;TCPServer/src&apos;&#x0D;&#x0A;- Original element: &apos;ThreadEx/src/threadEx&apos;" description="Copy package" destination="=TCPServer/src" element1="/src&lt;threadEx" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1655089679361" version="1.0"/>
+</session>

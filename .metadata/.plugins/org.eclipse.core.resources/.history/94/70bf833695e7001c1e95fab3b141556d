@@ -1,0 +1,46 @@
+package main;
+
+import overridecls.ChildOne;
+import overridecls.ChildTwo;
+import overridecls.SuperClass;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 *  OverRide : 부모 클래스로 부터 상속받은 메소드를 고쳐 기입 하는 것
+		 *  
+		 *  
+		 */
+		
+//		ChildClass cc = new ChildClass();
+//		cc.method();
+		
+//		ChildOne one = new ChildOne();
+//		ChildTwo two = new  ChildTwo();
+//		
+//		one.method();
+//		two.method();
+		//배열 할당
+//		ChildOne arrOne[] = new ChildOne[10];
+//		ChildTwo arrtwo[] = new ChildTwo[10];
+//		
+//		//10개씩 생성 배열 채움
+//		for (int i = 0; i < arrtwo.length; i++) {
+//			arrOne[i] = new ChildOne();
+//			arrtwo[i] = new ChildTwo();
+//		}
+//		
+//		arrOne[0].method();
+//		arrOne[1].method();
+//		arrOne[2].method();
+//		arrOne[3].method();
+//		arrOne[4].method();
+		
+		SuperClass sc = new ChildOne(); // 인스턴스는 super로 잡고 생성은 child로 했는데 생성되는건 자식의 override된게 호출됨
+		sc.method();
+
+	}
+
+}

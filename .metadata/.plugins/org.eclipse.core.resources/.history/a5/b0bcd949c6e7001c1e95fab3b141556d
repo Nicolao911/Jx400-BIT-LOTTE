@@ -1,0 +1,12 @@
+package main;
+
+public class AddressBookDTO {
+	String fileName;
+	int humanCount = 0; 
+	
+	String name;
+	int age;
+	String phone;
+	String address;
+	String memo;
+}

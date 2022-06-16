@@ -1,0 +1,17 @@
+package main;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*
+		 * abstract class : 일반 메소드 + 추상 메소드
+		 * 
+		 * 
+		 * 
+		 */
+
+	}
+
+}

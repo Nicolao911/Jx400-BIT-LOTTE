@@ -1,0 +1,15 @@
+package main;
+
+import cls.NameCard;
+
+public class MyClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		NameCard nCard = new NameCard("성춘향", "234", "sch@daum.net")
+		
+	}
+
+}

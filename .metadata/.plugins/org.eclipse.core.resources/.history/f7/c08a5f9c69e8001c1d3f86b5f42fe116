@@ -1,0 +1,10 @@
+package team;
+/*
+ * 타자 개인정보 java beans
+ */
+public class Batter extends Human {
+	//batter : 타수, 안타수, 타율 -- 상속
+	private int AB;
+	private int safety;
+	private Double BA;
+}

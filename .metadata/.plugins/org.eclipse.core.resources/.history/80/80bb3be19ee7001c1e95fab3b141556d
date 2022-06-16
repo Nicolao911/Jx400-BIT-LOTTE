@@ -1,0 +1,39 @@
+package main;
+
+import cls.AbstractClass;
+import cls.MyClass;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * Abstract class : 추상 클래스
+		 * 				   추상 메소드를 하나이상 포함하고 있는 클래스
+		 * 					abstract method  : 처리 내용은 없고 선언만 되어있는 것 
+		 * 									 prototype 만 선언
+		 * 									int method(char c) 이렇게 선언만 되있는것 매겨변수(char c)랑 리턴값(int)은 뭔가 만 설정된 것 
+		 * 
+		 */
+
+		
+//		AbstractClass ac = new AbstractClass(); 안됨.. 상속받고해야됨
+		MyClass myCls = new MyClass();
+		myCls.abstractMethod();
+		
+		AbstractClass ac = new MyClass();
+		ac.abstractMethod();
+		
+		AbstractClass ac1 = new AbstractClass() {
+
+			@Override
+			public void abstractMethod() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		};
+		
+	}
+
+}

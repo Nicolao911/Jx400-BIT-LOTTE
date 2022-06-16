@@ -1,0 +1,12 @@
+package main;
+/*
+ * 야구 선수 목록 프로그램 main class
+ */
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

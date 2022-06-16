@@ -1,0 +1,15 @@
+package main;
+/*
+ * java beans
+ */
+public class AddressBookDTO {
+	String fileName;// 확인해야될듯
+	String name; // 이름
+	int age; // 나이
+	String phone; // 전화번호
+	String address;// 주소
+	String memo;// 메모
+	
+	
+	
+}

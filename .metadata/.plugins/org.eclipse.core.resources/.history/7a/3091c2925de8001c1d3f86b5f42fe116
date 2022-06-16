@@ -1,0 +1,18 @@
+import bomb.Bomb;
+import weapon.Weapon;
+
+public class Atype implements AbstractItem {
+
+	@Override
+	public Weapon createWeapon() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Bomb createBomb() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

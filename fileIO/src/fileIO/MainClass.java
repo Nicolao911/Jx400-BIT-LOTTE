@@ -36,9 +36,9 @@ public class MainClass {
 //		
 //		for (int i = 0; i < filelist.length; i++) {
 //			if (filelist[i].isFile) {
-//				ystem.out.println("[파일] = " + FileList[i].getName());
+//				System.out.println("[파일] = " + FileList[i].getName());
 //			} else if(filelist[i].isDreectory()){
-//				ystem.out.println("[폴더] = " + FileList[i].getName());
+//				System.out.println("[폴더] = " + FileList[i].getName());
 //			} else {
 //				System.out.println("[?] = " + FileList[i].getName());
 //			}

@@ -1,0 +1,18 @@
+package cls;
+/*
+ * java beans
+ */
+public class MyClass {
+	
+	private int number;
+	private String name;
+	private Double height;
+	
+	public MyClass() { // 기본 생성자
+		// TODO Auto-generated constructor stub
+		System.out.println("\"Myclass myClass()\"");
+		number = 1;
+		name = "";
+		height = 0.0;
+	}
+}

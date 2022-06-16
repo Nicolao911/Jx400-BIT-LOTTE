@@ -1,0 +1,7 @@
+package dto;
+/*
+ * 인적사항 기본 정보 java beans
+ */
+public class Human {
+
+}

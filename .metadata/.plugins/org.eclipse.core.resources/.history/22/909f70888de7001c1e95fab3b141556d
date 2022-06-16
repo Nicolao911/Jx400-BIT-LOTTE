@@ -1,0 +1,9 @@
+package cls;
+
+public class ParentClass {
+	
+	
+	private String name;
+	int age;
+	
+}

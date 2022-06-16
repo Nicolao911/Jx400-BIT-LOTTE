@@ -1,0 +1,21 @@
+package cls;
+
+public class ChildClass extends ParentClass {
+	
+	private double height;
+	
+	public void func() {
+		System.out.println("ChildClass func()");
+		
+//		name = "hello";
+		age = 24;
+		
+	}
+	
+	public ChildClass () {
+		super("hello");
+		System.out.println("ChildClass func");
+	}
+	
+	
+}

@@ -1,0 +1,35 @@
+package main;
+
+import overridecls.ChildOne;
+import overridecls.ChildTwo;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 *  OverRide : 부모 클래스로 부터 상속받은 메소드를 고쳐 기입 하는 것
+		 *  
+		 *  
+		 */
+		
+//		ChildClass cc = new ChildClass();
+//		cc.method();
+		
+//		ChildOne one = new ChildOne();
+//		ChildTwo two = new  ChildTwo();
+//		
+//		one.method();
+//		two.method();
+		
+		ChildOne arrOne[] = new ChildOne[10];
+		ChildTwo arrtwo[] = new ChildTwo[10];
+		
+		for (int i = 0; i < arrtwo.length; i++) {
+			arrOne[i] = new ChildOne();
+			arrtwo[i] = new ChildTwo();
+		}
+
+	}
+
+}

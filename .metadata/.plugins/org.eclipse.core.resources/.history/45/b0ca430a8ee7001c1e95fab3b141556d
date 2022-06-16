@@ -1,0 +1,14 @@
+package cls;
+
+public class ParentClass {
+	
+	
+	private String name; // private 상속안됨
+	protected void name() {
+		
+	} int age;
+	
+	public void PaentMethod() {
+		System.out.println("ParentClass  ParentMethod()");
+	}
+}

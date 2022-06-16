@@ -1,0 +1,7 @@
+package cls;
+
+public class HeClass {
+	
+	private int number;
+	
+}

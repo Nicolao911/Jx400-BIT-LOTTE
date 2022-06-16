@@ -1,0 +1,70 @@
+package main;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*	(java) 							web(json)
+		 * hashMap 은 사전이다
+		 * 사과 : apple
+		 * key : value -> 한쌍(pair)
+		 * Tree 구조
+		 * 
+		 * 		*key값은 중복이 되지 않는다!*
+		 * TreeMap : 검색은 hashMap보다 느리지만 정렬(sort)가 추가되어있다. hashMap + sorting
+		 * 
+		 * linkedList arrayList는 호환됨 서로 데이터 던져주기 가능
+		 * hashMap과treeMap도 서로 토스가능
+		 */
+		
+//		HashMap<Integer , String> hMap = new HashMap<Integer, String>(); HashMap클레스
+		//좌변을 인터페이스로 할때 -> 호화성 생각해서 좌변을 인터페이스로 하자
+//		Map<Integer, String> hMap = new HashMap<Integer, String>();
+		//상속관계니까 우변을 자식 자식클래스로 할수있다.
+		Map<Integer, String> hMap = new TreeMap<Integer, String>();
+		
+		//추가
+		hMap.put(1001, "Tigers");
+		hMap.put(1002, "Lions");
+		hMap.put(1003, "Twins");
+		
+		String val = hMap.get(1002);
+		System.out.println(val);
+		
+		System.out.println(hMap.size());
+		
+		//출력
+		//반복자(=포인터)  -> db에선 cursor
+		Iterator<Integer> it = hMap.keySet().iterator();
+		while(it.hasNext()) {
+			Integer key = it.next();
+			String value = hMap.get(key);
+			System.out.println(key + " : " + value);
+		}
+		
+		hMap.put(1004, "Giants"); //선형구조로 들어가는게 아니라 인덱스가 0부터인건 아님
+		it = hMap.keySet().iterator();
+		while(it.hasNext()) {
+			Integer key = it.next();
+			String value = hMap.get(key);
+			System.out.println(key + " : " + value);
+		}
+		
+		//삭제
+		
+		//검색
+		
+		//수정
+		
+		
+		
+		
+	}
+
+}

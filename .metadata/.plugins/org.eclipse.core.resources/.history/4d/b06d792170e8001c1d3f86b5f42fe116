@@ -1,0 +1,105 @@
+package main;
+/*
+ * 메뉴 선택 class
+ */
+
+import java.util.Scanner;
+
+import dao.BaseBallDAO;
+import team.Pitcher;
+
+public class Menu {
+	
+	/*
+	 * 사용자가 선택할 수 있는 메뉴를 출력한다.
+	 */
+	static Scanner sc = new Scanner(System.in);
+	static BaseBallDAO dao = new BaseBallDAO();
+	public static void showMenu() {
+		while (true) {
+			//추가, 삭제, 검색(동명이인), 수정, 파일저장, 파일읽기 -> 파일 읽고 나서 다음 번호부터 다시 시작
+			System.out.println("메뉴를 선택하세요");
+			System.out.println("------------------------");
+			System.out.println("1. 선수 정보 입력");
+			System.out.println("2. 선수 정보 삭제");
+			System.out.println("3. 선수 정보 검색");
+			System.out.println("4. 선수 정보 수정");
+			System.out.println("5. 선수 목록 저장");
+			System.out.println("6. 종료");
+			
+			int selNum = sc.nextInt();
+			switch (selNum) {
+			case 1: {
+				dao.insert();
+				break;
+			}
+			case 2: {
+				
+				break;
+			}
+			case 3: {
+				
+				break;
+			}
+			case 4: {
+				
+				break;
+			}
+			case 5: {
+				
+				break;
+			}
+			case 6: {
+				
+				break;
+			}
+			}
+		}
+
+	}
+	
+	/*
+	 * 선수 입력시 포시션 선택 옵션을 출력한다.
+	 */
+	public static void selectOption() {
+		System.out.println("입력하실 선수 포지션을 선택하세요");
+		System.out.println("------------------------");
+		System.out.println("1. 투수 정보 입력");
+		System.out.println("2. 타자 정보 입력");
+		int selNum = sc.nextInt();
+		
+		if (selNum == 1) {
+			dao.insertPitcher();
+		} else if (selNum == 2) {
+			dao.insertBatter();
+		}
+	}
+	
+	public static Pitcher insertPitcherInfo() {
+		
+		Pitcher pitcher = new Pitcher();
+		
+		//선수 번호 자동 증가
+		System.out.println("추가하실 투수의 이름을 입력해주세요.");
+		String name = sc.nextLine();
+		pitcher.setName(name);
+		
+		System.out.println("추가하실 투수의 나이를 입력해주세요.");
+		int age = sc.nextInt();
+		pitcher.setAge(age);
+		
+		System.out.println("추가하실 투수의 키를 입력해주세요.");
+		Double height = sc.nextDouble();
+		pitcher.setHeight(height);
+		
+		System.out.println("추가하실 투수의 승리 횟수를 입력해주세요.");
+		int win = sc.nextInt();
+		pitcher.setWin(win);
+		
+		System.out.println("추가하실 투수의 패배 횟수를 입력해주세요.");
+		int lose = sc.nextInt();
+		pitcher.setWin(win);
+		
+		return pitcher;
+	}
+}

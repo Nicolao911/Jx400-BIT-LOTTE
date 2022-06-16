@@ -1,0 +1,11 @@
+package team;
+/*
+ * 인적사항 기본 정보 java beans
+ */
+public class Human {
+	//Human : , 이름, , 키(height) --부모
+	private int number;  //번호
+	private String name; //이름
+	private int age; //나이
+	private Double height;
+}

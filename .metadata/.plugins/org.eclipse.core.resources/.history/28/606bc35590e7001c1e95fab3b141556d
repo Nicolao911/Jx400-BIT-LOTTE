@@ -1,0 +1,16 @@
+package cls;
+
+public class ParentClass {
+	
+	
+	private String name; // private 상속안됨
+	protected int age; // 자식클래스에서는 접근 허용 하지만 다른클래스(외부)에선 접근 불가
+	
+	public ParentClass() {
+		System.out.println("ch>>>>>");
+	}
+	
+	public void PaentMethod() {
+		System.out.println("ParentClass  ParentMethod()");
+	}
+}

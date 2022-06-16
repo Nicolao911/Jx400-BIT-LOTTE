@@ -1,0 +1,10 @@
+package cls;
+
+public class MyClass {
+	
+	private int number;
+	private String name;
+	private int height;
+	
+	
+}

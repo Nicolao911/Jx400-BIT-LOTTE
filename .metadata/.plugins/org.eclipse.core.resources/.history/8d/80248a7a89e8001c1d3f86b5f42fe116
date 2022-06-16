@@ -1,0 +1,9 @@
+package fileIo;
+/*
+ * 데이터 파일 입출력 제어 class
+ */
+public class DataProc {
+	
+	
+
+}

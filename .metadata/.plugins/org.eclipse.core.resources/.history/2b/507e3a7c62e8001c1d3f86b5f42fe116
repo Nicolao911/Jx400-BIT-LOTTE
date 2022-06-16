@@ -1,0 +1,7 @@
+package observer;
+
+import java.util.Observer;
+
+public class ObserverA implements Observer {
+
+}

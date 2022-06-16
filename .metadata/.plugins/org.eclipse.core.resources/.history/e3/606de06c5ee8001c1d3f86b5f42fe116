@@ -1,0 +1,19 @@
+package main;
+
+import person.Person;
+import types.Atype;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person person = new Person();
+		person.cerate(new Atype());
+		
+		person.m_weapon.drawWeapon();
+		person.m_bomb.drawBomb();
+		
+
+	}
+
+}

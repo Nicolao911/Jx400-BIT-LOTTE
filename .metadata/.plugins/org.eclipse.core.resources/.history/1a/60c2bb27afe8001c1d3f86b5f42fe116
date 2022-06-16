@@ -1,0 +1,11 @@
+package dto;
+
+public class Pitcher extends Human {
+
+	@Override
+	public String printAll() {
+		//이거 직접 source -> Override/implement Method 눌러서 내려서 쓴것. 바로 부모클래스의 getter에 접근 가능하다.
+		return getName() ;
+	}
+
+}

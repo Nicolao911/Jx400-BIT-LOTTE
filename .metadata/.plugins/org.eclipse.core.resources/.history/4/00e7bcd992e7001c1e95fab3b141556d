@@ -1,0 +1,15 @@
+package main;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 *  OverRide : 부모 클래스로 부터 상속받은 메소드를 고쳐 기입 하는 것
+		 *  
+		 *  
+		 */
+
+	}
+
+}

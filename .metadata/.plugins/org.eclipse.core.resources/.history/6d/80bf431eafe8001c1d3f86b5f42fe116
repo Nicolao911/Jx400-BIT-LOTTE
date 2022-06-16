@@ -1,0 +1,11 @@
+package dto;
+
+public class Pitcher extends Human {
+
+	@Override
+	public String printAll() {
+		// TODO Auto-generated method stub
+		return getName() + 
+	}
+
+}

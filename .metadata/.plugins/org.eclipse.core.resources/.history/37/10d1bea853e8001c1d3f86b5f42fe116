@@ -1,0 +1,9 @@
+package cls;
+
+public class YouClass {
+	
+	private int tag;
+	
+	
+	
+}

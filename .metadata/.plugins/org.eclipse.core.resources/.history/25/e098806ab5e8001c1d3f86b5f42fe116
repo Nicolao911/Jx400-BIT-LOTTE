@@ -1,0 +1,12 @@
+package dto;
+/*
+ * 타자 개인정보 java beans
+ */
+public class BatterDto extends HumanDto {
+	private int AB; //타수 at Bat
+	private int safety; // 안타수
+	private Double BA; // 타율 Batting average
+	
+	public BatterDto() {
+	}
+}

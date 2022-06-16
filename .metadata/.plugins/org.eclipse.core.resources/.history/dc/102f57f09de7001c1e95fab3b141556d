@@ -1,0 +1,15 @@
+package cls;
+
+public class AbstractClass {
+	
+	private int number; // 맴버 변수 포함 가능 인터페이슨 안되.
+	
+	public void method() { // 일반 method포함 가능
+		
+	}
+	
+	public abstract void abstractMethod() {
+		
+	}
+}
+

@@ -1,0 +1,16 @@
+package main;
+
+import javax.security.auth.callback.NameCallback;
+
+import cls.NameCard;
+
+public class MyClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		NameCallback nCard = new NameCard("홍길동", "123", "hgd@naver.com")
+
+	}
+
+}
