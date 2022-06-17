@@ -48,4 +48,10 @@ from employees group by department_id having count(employee_id) > 4;
 -- 문제9) EMPLOYEES 테이블에서 전체 월급이 10000을 초과하는 각 업무에 대해서 업무와 월급여 합계를 출력하라. 
 -- 단 판매원(SA_)은 제외하고 급여 합계로 정렬(내림차순)하라.
 	select job_id , sum(salary)
-	from employees group by job_id, salary having salary > 10000 and job_id not like 'SA_%' order by sum(salary);
+	from employees where job_id not like 'SA_%' group by job_id having sum(salary) > 10000 order by sum(salary) desc;
+
+	select job_id , sum(salary)
+	from ( select  job_id, salary from employees where job_id not like 'SA_%') a
+    group by job_id 
+    having sum(salary) > 10000
+    order by sum(salary) desc;
