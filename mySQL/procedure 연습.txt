@@ -1,0 +1,121 @@
+-- 1. 사원번호를 입력 받으면 다음과 같이출력되는 프로시저를 작성하라
+
+-- purchasing 부서의 Alexander 사원입니다
+drop procedure empInfo;
+delimiter //
+	create procedure empInfo(in v_empno int)
+	begin
+    declare dept varchar(30);
+    declare name varchar(30);
+  
+    select department_name, first_name into dept, name
+    from departments dept, employees emp
+    where dept.department_id = emp.department_id
+    and emp.employee_id = v_empno;
+	
+	select concat(dept,'부서의 ', name, '사원입니다');
+	end;
+	//
+delimiter ;
+
+call empInfo(130);
+
+
+-- 2. 사원번호를 입력받고, 소속부서의 최고, 최저 연봉 차액을 파라미터로 출력하는 프로시저를 작성하라
+
+delimiter //
+	create procedure salInfo(in v_empno int )
+    begin
+    
+    declare max decimal(8,2);
+    declare min decimal(8,2);
+    
+	select min(salary), max(salary) into min, max
+	from departments dept, employees emp
+    where dept.department_id = emp.department_id
+    and dept.department_id =  
+    (select department_id 
+    from employees
+    where employee_id = v_empno);
+    
+    select concat('부서의 최고 연봉', max, '- 최저연봉', min, '=', max-min);
+    end;
+    //
+delimiter ;
+call salInfo(130);
+
+
+-- 3. 부서번호를 입력하면 해당 부서에서 근무하는 사원 수를 반환하는 함수를 정의하시오
+    delimiter //
+    create function deptInfo(v_deptno int) returns int
+     begin
+		declare empCnt int;
+		select count(emp.employee_id) into empCnt
+		from departments dept, employees emp
+		where dept.department_id = emp.department_id
+        and dept.department_id = v_deptno;
+		return empCnt;
+    
+    end;
+    //
+	delimiter ;
+    select deptInfo(50);
+이거 쿼리     
+	select count(employee_id)
+    from employees
+    group by department_id
+    having department_id = 60;
+
+   -- 4. employees 테이블의 사원번호를 입력하면 해당 사원의 관리자 이름을 구하는 함수를 정의하시오.
+    delimiter //
+		create function managerInfo(v_employee_id int) returns varchar(30)
+		begin
+			declare managerName varchar(30);
+			select first_name into managerName
+			from employees
+			where employee_id = (
+				select mgr.manager_id from
+				employees emp, employees mgr
+				where emp.employee_id = mgr.employee_id
+				and emp.employee_id = v_employee_id);
+				
+				return managerName;
+		end;
+		//
+    delimiter ;
+    select managerInfo(110);
+   이거 쿼리
+    select mgr.first_name from
+				employees emp, employees mgr
+				where emp.manager_id = mgr.employee_id
+				and emp.employee_id =103;
+    /*
+	5. employees 태이블을 이용해서 사원 번호를 입력하면 급여 등급을 구하는 함수를 정의하시오.
+
+	18000~ 24000 a
+	12000~ 18000 미만 b
+	8000~12000 미만 c
+	3000~8000 미만 D
+	그 외에는 f
+    */
+    
+    delimiter //
+		create function salRank(v_empno int) returns varchar(10)
+        begin
+        declare salRank varchar(10);
+		declare sal int;
+        select salary into sal from employees 
+        where employee_id = v_empno;
+        
+		if sal between 18000 and 24000 then set salRank = 'a';
+			elseif  sal < 18000 and sal >= 12000 then set salRank = 'b';
+			elseif  sal < 12000 and sal >= 8000 then set salRank = 'c';
+            elseif  sal < 8000 and sal >= 3000 then set salRank = 'd';
+			else
+			set salRank = 'f';
+		end if;
+        return salRank;
+        end;
+        //
+    delimiter ;
+    select salRank(150);

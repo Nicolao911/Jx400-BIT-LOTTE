@@ -18,7 +18,7 @@ select avg(salary), max(salary), min(salary), sum(salary) from employees where j
 
 -- 문제2) EMPLOYEES 테이블에 등록되어 있는 인원수, 보너스가 NULL이 아닌 인원수, 보너스의 평균, 등록되어 있는 부서의 수를 구하여 출력하라.
 select count(employee_id), (select count(salary) from employees where salary + (salary*commission_pct) is not null) bCount, avg(salary + (salary*commission_pct)), 
-count(department_id) from employees;
+count(distinct department_id) from employees;
 ;
 
 -- 문제3) EMPLOYEES 테이블에서 부서별로 인원수, 평균 급여, 최저급여, 최고 급여, 급여의 합을 구하여 출력하라.
@@ -47,6 +47,9 @@ from employees group by department_id having count(employee_id) > 4;
 
 -- 문제9) EMPLOYEES 테이블에서 전체 월급이 10000을 초과하는 각 업무에 대해서 업무와 월급여 합계를 출력하라. 
 -- 단 판매원(SA_)은 제외하고 급여 합계로 정렬(내림차순)하라.
+	select job_id , sum(salary)
+	from employees group by job_id, salary having sum(salary) > 10000 and job_id not like 'SA_%' order by sum(salary); -> x
+
 	select job_id , sum(salary)
 	from employees where job_id not like 'SA_%' group by job_id having sum(salary) > 10000 order by sum(salary) desc;
 

@@ -55,8 +55,6 @@ create table tb_varchar(
 insert into tb_varchar(coll, col2, col3) values('avb', 'avb','avb');  -- 영문자 1byte
 insert into tb_varchar(coll, col2, col3) values('가나다', '가나다','가나다'); -- 한글 3byte
 
-디비 쿼리 안정성을 위해서 문자열로 값을 받아서 나중에 파싱하면 안정성이 크다
-대신 값이 다 들어가니까 조심조심
 
 -- 숫자(정수, 실수)
 -- INTEGER
